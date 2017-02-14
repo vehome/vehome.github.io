@@ -123,7 +123,7 @@
             transition-delay: 3.0s;
         }
 
-        h1, h2 {
+        h1, h2 ,h3{
             visibility: hidden;
             -webkit-transform: translate3d(0, 0, 0);
             -moz-transform: translate3d(0, 0, 0);
@@ -131,19 +131,23 @@
         }
 
             h1.transition-in,
-            h2.transition-in {
+            h2.transition-in,
+            h3.transition-in {
                 visibility: visible;
             }
 
             h1 [class^="letter"],
-            h2 [class^="letter"] {
+            h2 [class^="letter"],
+	    h3 [class^="letter"]{
                 opacity: 0;
             }
 
             h1.transition-in [class^="letter"],
-            h2.transition-in [class^="letter"] {
+            h2.transition-in [class^="letter"],
+            h3.transition-in [class^="letter"] {
                 opacity: 1;
             }
+	    
 
         #hovertreecontainer {
             display: table;
